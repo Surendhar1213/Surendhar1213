@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Student Form</h1>
+    <form style="max-width:400px;margin:auto;padding:20px;border:1px solid #ccc;border-radius:5px;">
+        <label for="name" style="display:block;margin-bottom:10px;">
+            Name:
+            <input type="text" id="name" name="name" style="width:100%;padding:10px;margin-top:5px;">
+        </label>
+        
+        <label for="age" style="display:block;margin-bottom:10px;">
+            Age:
+            <input type="number" id="age" name="age" style="width:100%;padding:10px;margin-top:5px;">
+        </label>
+
+        <label for="email" style="display:block;margin-bottom:10px;">
+            Email:
+            <input type="email" id="email" name="email" style="width:100%;padding:10px;margin-top:5px;">
+        </label>
+
+        <label for="mobile" style="display:block;margin-bottom:10px;">
+            Mobile Number:
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" style="width:100%;padding:10px;margin-top:5px;">
+        </label>
+
+        <label for="address" style="display:block;margin-bottom:10px;">
+            Address:
+            <textarea id="address" name="address" rows="4" style="width:100%;padding:10px;margin-top:5px;"></textarea>
+        </label>
+
+        <label for="gender" style="display:block;margin-bottom:10px;">
+            Gender:
+            <div style="margin-top:5px;">
+                <label style="margin-right:10px;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    Male
+                </label>
+                <label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    Female
+                </label>
+            </div>
+        </label>
+        
+        <label for="comments" style="display:block;margin-bottom:10px;">
+            Comments:
+            <textarea id="comments" name="comments" rows="4" style="width:100%;padding:10px;margin-top:5px;"></textarea>
+        </label>
+        
+        <button type="submit" style="display:block;width:100%;padding:10px;background-color:#4CAF50;color:white;border:none;border-radius:5px;cursor:pointer;">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
