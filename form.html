@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+   <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Pacifico"> 
+    <style>
+         body{
+            background-image: url(./css/img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 300px;
+            margin: 180px;
+            margin-left: 650px;
+            border: 5px solid black;
+            padding: 20px;
+            line-height: 25px;
+            letter-spacing: 3px;   
+        }
+
+    </style>
 </head>
 <body>
-    <form action="" method="get">
-        <input type="text" id="user" name="userNmae"/>
-        <textarea> check</textarea>
-        <select>
-            <option>Tamil Nadu</option>
-            <option>Kerala</option>
-            <option>Karnataka</option>
+    <!-- <div class="form"> -->
+   
+    <form action="signupresult.html" method="get">
+    <div>
+        <label for="Username">Username:</label>
+        <input type="text" name="username" id="Username" value="surendhar"> 
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input tyoe="password" name="password" id="password" placeholder="password">
+    </div>
+    <div>
+        <label for="Dateofbirth">Dateofbirth</label>
+        <input type="date" name="Dateofbirth" id="Dateofbirth" minlength="5">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="Email"/>
+        <div>
+            <label for="">About</label>
+            <textarea name="" id=""></textarea>
+        </div>
+    </div>
+       <button type="submit">sign Up</button>
+       <button type="reset">Reset</button>
        
-        <input type="submit"/>
-    </select>
     </form>
+</div>    
 </body>
 </html>
